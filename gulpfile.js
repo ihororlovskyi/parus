@@ -59,9 +59,9 @@ gulp.task('sass', function () {
 /* Js */
 gulp.task('jsConcat', ['sass'], function () {
     return gulp.src([
-            'assets/js/lib/*',
-            'assets/js/vendor/*',
-            'assets/js/common/*'
+            '_js/lib/*',
+            '_js/vendor/*',
+            '_js/common/*'
         ])
         .pipe(concat('all.js'))
         .pipe(gulp.dest('assets/js'));
